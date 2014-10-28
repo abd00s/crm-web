@@ -1,6 +1,11 @@
-<h1>Welcome to this CRM!</h1>
-<p>Main menu</p>
+<h1>Welcome to <%= @crm_name %>!</h1>
+<h2>Today is: <%= Time.now.day %>/<%= Time.now.month %>/<%= Time.now.year %></h2>
+<h3>Main menu</h3>
+<p>What would you like to do?</p>
 <ul>
-  <li><a href="/contacts">View all contacts</a></li>
-  <!-- please complete me with links to other actions -->
+  <li><a href="/contacts">View All Contacts</a></li>
+  <li><a href="/modify">Modify a Contact</a></li>
+  <li><a href="/delete">Delete a Contact</a></li>
+  <li><a href="/display">Display a Contact</a></li>
+  <li><a href="/contacts">Display Contacts by Attribute</a></li>
 </ul>
