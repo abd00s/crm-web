@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>CRM App</title>
 	</head>
 
 	<body>
-		<%= yield %>
-	</body>
+	     <header>
+	     	<h1>CRM Application</h1>
+	     </header>
+	     <nav>
+	     <ul>
+	     	<li><a href="/contacts/new">Add New Contact</a></li>
+	     	<li><a href="/contacts">View All Contacts</a></li>
+	     	<li><a href="">Modify a Contact</a></li>
+	     	<li><a href="">Delete a Contact</a></li>
+	     	<li><a href="">Display a Contact</a></li>
+	     	<li><a href="">Display Contacts by Attribute</a></li>
+	     </ul>
+	     </nav>
+
+	     <main><%= yield %></main>
+	     
+		<footer><a href="/">Home</a></footer>
+	</body>	
 </html>
