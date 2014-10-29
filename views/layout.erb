@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>CRM App</title>
+		<link rel="stylesheet" href="/stylesheet.css">
 	</head>
 
 	<body>
@@ -9,7 +10,7 @@
 	     	<h1>CRM Application</h1>
 	     </header>
 	     <nav>
-	     <ul>
+	     <ul class="nav">
 	     	<li><a href="/contacts/new">Add New Contact</a></li>
 	     	<li><a href="/contacts">View All Contacts</a></li>
 	     	<li><a href="">Modify a Contact</a></li>
@@ -20,7 +21,7 @@
 	     </nav>
 
 	     <main><%= yield %></main>
-	     
+
 		<footer><a href="/">Home</a></footer>
 	</body>	
 </html>

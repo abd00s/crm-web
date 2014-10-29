@@ -5,11 +5,11 @@
 	</head>
 
 	<body>
-		<h1>Welcome to <%= @crm_name %>!</h1>
-		<h2>Today is: <%= Time.now.day %>/<%= Time.now.month %>/<%= Time.now.year %></h2>
+		<h1 id="greeting">Welcome to <%= @crm_name %>!</h1>
+		<h2 id="date">Today is: <%= Time.now.day %>/<%= Time.now.month %>/<%= Time.now.year %></h2>
 		<h3>Main menu</h3>
 		<p>What would you like to do?</p>
-		<ul>
+		<ul id="main">
 		  <li><a href="/contacts/new">Add New Contact</a></li>
 		  <li><a href="/contacts">View All Contacts</a></li>
 		  <li><a href="/modify">Modify a Contact</a></li>
