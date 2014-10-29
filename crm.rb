@@ -5,7 +5,7 @@ require_relative 'rolodex.rb'
 $rolodex = Rolodex.new
 
 get "/" do 
-	@crm_name = "My CRM"
+	@crm_name = "My Very Stylish CRM"
 	erb :index
 end
 
@@ -21,4 +21,9 @@ post '/contacts' do
   new_contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
   $rolodex.add_contact(new_contact)
   redirect to('/contacts')
+end
+
+get '/calculate' do
+	#do calculation
+	# erb :results
 end
